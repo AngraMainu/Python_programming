@@ -4,8 +4,10 @@ import filter
 import quality as quality
 from utils import read_classification_from_file
 from confmat import BinaryConfusionMatrix
-path2 = "/home/ezvezdov/Programming/rph/du/spam_filtr/spam-data-12-s75-h25/1plus2"
-path1 = "/home/ezvezdov/Programming/rph/du/spam_filtr/spam-data-12-s75-h25/1"
+
+#path 2: data to train on, path 1: data to test filter on
+path2 = "PATH_TO_FILE_TO_TRAIN_ON"
+path1 = "PATH_TO_FILE_TO_TEST_ON"
 
 filtr = filter.MyFilter()
 filtr.train(path2)
